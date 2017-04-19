@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <type name="Magento\Framework\View\Element\Html\Links">
+        <plugin sortOrder="1" name="magePalCustomerAccountLinksManagerLinks"
+                type="MagePal\CustomerAccountLinksManager\Plugin\View\Element\Html\LinksPlugin"/>
+        <plugin sortOrder="1" name="magePalCustomerAccountLinksManagerLinks"
+                type="MagePal\CustomerAccountLinksManager\Plugin\View\Element\Html\LinksPlugin"/>
+    </type>
+</config>
