@@ -1,5 +1,5 @@
 ## Customer Account Links Manager for Magento2
-Customer Account Links Manager allows you to quickly and easily remove unwanted links added by either default magento or other third part extension from customer dashboard sidebar navigation.
+Customer Account Links Manager allows you to quickly and easily remove unwanted links added by either default magento or other third party extensions from the sidebar navigation in customer dashboard.
 
 ### Features
  - Remove navigation links from account dashboard sidebar added by:
@@ -33,4 +33,6 @@ composer require magepal/magento2-customeraccountlinksmanager
 Log into your Magetno 2 Admin, then goto Stores -> Configuration -> MagePal -> Customer Account Links Manager
 
 ![image](https://cloud.githubusercontent.com/assets/1415141/25197024/7f7dea2c-2510-11e7-9785-780d7f2fc7b0.png)
+
+![image](https://cloud.githubusercontent.com/assets/1415141/25233635/8354aa4e-25ad-11e7-87ae-55fcee1a4194.png)
 
