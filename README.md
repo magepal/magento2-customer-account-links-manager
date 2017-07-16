@@ -10,7 +10,7 @@ Customer Account Links Manager allows you to quickly and easily remove unwanted 
  
  - Switch on/off menu dashboard links easily via Magento backend.
  
- ### Remove
+ #### Remove Customer Account Links
  - NewsLetter Subscriptions
  - Billing Agreements
  - My Product Reviews
