@@ -12,12 +12,17 @@ Customer Account Links Manager allows you to quickly and easily remove unwanted 
  
  #### Remove Customer Account Links
  - NewsLetter Subscriptions
- - Billing Agreements
+ - Billing Agreements / Subscription
  - My Product Reviews
  - Stored Payment Methods
  - My wish List
  - My Downloadable Products
- - ...
+ - Customer Balance
+ - My Credit Cards
+ - Gift Card
+ - Gift Registry
+ - Reward points
+ - Order by SKU
 
 #### 1 - Installation Customer Account Links Manager
 ##### Manually
