@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright © 2016 MagePal. All rights reserved.
+ * Copyright © 2017 MagePal LLC. All rights reserved.
  * See COPYING.txt for license details.
  */
 -->
@@ -33,14 +33,13 @@
                 </field>
 
                 <field id="action" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Links</label>
+                    <label>Action</label>
                     <source_model>MagePal\CustomerAccountLinksManager\Model\Config\Source\Action</source_model>
                 </field>
 
                 <field id="sections" translate="label" type="multiselect" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Links</label>
+                    <label>Dashboard Section</label>
                     <source_model>MagePal\CustomerAccountLinksManager\Model\Config\Source\Sections</source_model>
-                    <comment>.</comment>
                 </field>
             </group>
         </section>
