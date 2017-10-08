@@ -10,6 +10,19 @@ Customer Account Links Manager allows you to quickly and easily remove unwanted 
  
  - Switch on/off menu dashboard links easily via Magento backend.
  
+ #### Remove Customer Account Links
+ - NewsLetter Subscriptions
+ - Billing Agreements / Subscription
+ - My Product Reviews
+ - Stored Payment Methods
+ - My wish List
+ - My Downloadable Products
+ - Customer Balance
+ - My Credit Cards
+ - Gift Card
+ - Gift Registry
+ - Reward points
+ - Order by SKU
 
 #### 1 - Installation Customer Account Links Manager
 ##### Manually
@@ -36,3 +49,7 @@ Log into your Magetno 2 Admin, then goto Stores -> Configuration -> MagePal -> C
 
 ![image](https://cloud.githubusercontent.com/assets/1415141/25233635/8354aa4e-25ad-11e7-87ae-55fcee1a4194.png)
 
+
+----
+
+Need help setting up or want to customize this extension to meet your business needs? Please email support@magepal.com and if we like your idea we will add this feature for free or at a discounted rate.
