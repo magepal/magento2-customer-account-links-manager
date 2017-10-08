@@ -1,10 +1,10 @@
 <?php
 /**
- * Copyright © 2017 MagePal. All rights reserved.
+ * Copyright © 2017 MagePal LLC. All rights reserved.
  * See COPYING.txt for license details.
  */
 
-namespace MagePal\CustomerAccountLinksManager\Block\Adminhtml\System\Config;
+namespace MagePal\CustomerAccountLinksManager\Block\Adminhtml\System\Config\Form\Module;
 
 class Version extends \Magento\Config\Block\System\Config\Form\Field
 {

@@ -42,27 +42,35 @@ class Sections implements \Magento\Framework\Option\ArrayInterface
 
                 if($referenceBlocks = $configXml->body->referenceBlock){
                     foreach($referenceBlocks as $referenceBlock){
-                        $list[(string) $referenceBlock->block['name']] = [
-                            'value' => (string) $referenceBlock->block['name'],
-                            'label' => (string) $referenceBlock->xpath('block/arguments/argument[@name="label"]')[0]
-                        ];
+                        if(!empty($referenceBlock->xpath('block/arguments/argument[@name="label"]'))){
+                            $list[(string) $referenceBlock->block['name']] = [
+                                'value' => (string) $referenceBlock->block['name'],
+                                'label' => (string) $referenceBlock->xpath('block/arguments/argument[@name="label"]')[0]
+                            ];
+                        }
+
                     }
 
                 }
                 else if($referenceContainerBlocks = $configXml->body->referenceContainer->block->block->block){
                     for($count = 0; $count < count($referenceContainerBlocks); $count++){
-                        $list[(string) $referenceContainerBlocks[$count]['name']] = [
-                            'value' => (string) $referenceContainerBlocks[$count]['name'],
-                            'label' => (string) $referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]')[0]
-                        ];
+                        if(!empty($referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]'))){
+                            $list[(string) $referenceContainerBlocks[$count]['name']] = [
+                                'value' => (string) $referenceContainerBlocks[$count]['name'],
+                                'label' => (string) $referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]')[0]
+                            ];
+                        }
                     }
                 }
                 else if($referenceContainerBlocks = $configXml->body->referenceContainer->block->block){
                     for($count = 0; $count < count($referenceContainerBlocks); $count++){
-                        $list[(string) $referenceContainerBlocks[$count]['name']] = [
-                            'value' => (string) $referenceContainerBlocks[$count]['name'],
-                            'label' => (string) $referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]')[0]
-                        ];
+                        if(!empty($referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]'))){
+                            $list[(string) $referenceContainerBlocks[$count]['name']] = [
+                                'value' => (string) $referenceContainerBlocks[$count]['name'],
+                                'label' => (string) $referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]')[0]
+                            ];
+                        }
+
                     }
                 }
 
