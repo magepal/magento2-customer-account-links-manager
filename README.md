@@ -43,7 +43,7 @@ composer require magepal/magento2-customeraccountlinksmanager
 
 #### 3 - Configure Customer Account Links Manager
 
-Log into your Magetno 2 Admin, then goto Stores -> Configuration -> MagePal -> Customer Account Links Manager
+Log into your Magento 2 Admin, then goto Stores -> Configuration -> MagePal -> Customer Account Links Manager
 
 ![image](https://cloud.githubusercontent.com/assets/1415141/25197024/7f7dea2c-2510-11e7-9785-780d7f2fc7b0.png)
 
