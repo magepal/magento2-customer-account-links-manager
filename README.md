@@ -2,7 +2,7 @@
 Customer Account Links Manager allows you to quickly and easily remove unwanted links added by either default magento or other third party extensions from the sidebar navigation in customer dashboard.
 
 Admin Configuration
-![Customer Account Links Manager for Magento2](https://cloud.githubusercontent.com/assets/1415141/25197024/7f7dea2c-2510-11e7-9785-780d7f2fc7b0.png)
+![Customer Account Links Manager for Magento2](https://user-images.githubusercontent.com/1415141/34304978-21795332-e70a-11e7-8e84-9f373ff8eb29.png)
 
 Frontend
 ![Customer Account Links Manager for Magento2](https://user-images.githubusercontent.com/1415141/34304296-34f2fe5c-e707-11e7-9526-0142bffbd4f7.png)
