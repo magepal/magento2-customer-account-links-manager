@@ -5,7 +5,7 @@ Admin Configuration
 ![Customer Account Links Manager for Magento2](https://user-images.githubusercontent.com/1415141/34304978-21795332-e70a-11e7-8e84-9f373ff8eb29.png)
 
 Frontend
-![Customer Account Links Manager for Magento2](https://user-images.githubusercontent.com/1415141/34304296-34f2fe5c-e707-11e7-9526-0142bffbd4f7.png)
+![magepal-custoemr-account](https://user-images.githubusercontent.com/1415141/34305370-d2a305c6-e70b-11e7-95c2-57e1e7853b9b.gif)
 
 ### Features
  - Remove navigation links from account dashboard sidebar added by:
