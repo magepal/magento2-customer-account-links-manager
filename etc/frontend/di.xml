@@ -4,7 +4,5 @@
     <type name="Magento\Framework\View\Element\Html\Links">
         <plugin sortOrder="1" name="magePalCustomerAccountLinksManagerLinks"
                 type="MagePal\CustomerAccountLinksManager\Plugin\View\Element\Html\LinksPlugin"/>
-        <plugin sortOrder="1" name="magePalCustomerAccountLinksManagerLinks"
-                type="MagePal\CustomerAccountLinksManager\Plugin\View\Element\Html\LinksPlugin"/>
     </type>
 </config>
