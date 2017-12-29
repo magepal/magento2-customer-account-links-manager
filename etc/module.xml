@@ -3,6 +3,7 @@
     <module name="MagePal_CustomerAccountLinksManager" setup_version="1.0.3">
         <sequence>
             <module name="Magento_Customer"/>
+            <module name="Magento_Wishlist"/>
         </sequence>
     </module>
 </config>
