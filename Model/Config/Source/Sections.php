@@ -26,9 +26,7 @@ class Sections implements \Magento\Framework\Option\ArrayInterface
     public function toOptionArray()
     {
         return $this->getSections();
-
     }
-
 
     public function getSections()
     {
@@ -37,24 +35,30 @@ class Sections implements \Magento\Framework\Option\ArrayInterface
         $list = [];
 
         foreach ($fileList as $configFile) {
-            if(strpos($configFile, 'customer_account.xml') !== false){
+            if (strpos($configFile, 'customer_account.xml') !== false) {
                 $configXml = simplexml_load_file($configFile);
 
-                if($referenceBlocks = $configXml->body->referenceBlock){
-                    foreach($referenceBlocks as $referenceBlock){
-                        if(!empty($referenceBlock->xpath('block/arguments/argument[@name="label"]'))){
+                if ($referenceBlocks = $configXml->body->referenceBlock) {
+                    foreach ($referenceBlocks as $referenceBlock) {
+                        if (!empty($referenceBlock->xpath('block/arguments/argument[@name="label"]'))) {
                             $list[(string) $referenceBlock->block['name']] = [
                                 'value' => (string) $referenceBlock->block['name'],
                                 'label' => (string) $referenceBlock->xpath('block/arguments/argument[@name="label"]')[0]
                             ];
                         }
-
                     }
-
-                }
-                else if($referenceContainerBlocks = $configXml->body->referenceContainer->block->block->block){
-                    for($count = 0; $count < count($referenceContainerBlocks); $count++){
-                        if(!empty($referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]'))){
+                } elseif ($referenceContainerBlocks = $configXml->body->referenceContainer->block->block->block) {
+                    for ($count = 0; $count < count($referenceContainerBlocks); $count++) {
+                        if (!empty($referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]'))) {
+                            $list[(string) $referenceContainerBlocks[$count]['name']] = [
+                                'value' => (string) $referenceContainerBlocks[$count]['name'],
+                                'label' => (string) $referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]')[0]
+                            ];
+                        }
+                    }
+                } elseif ($referenceContainerBlocks = $configXml->body->referenceContainer->block->block) {
+                    for ($count = 0; $count < count($referenceContainerBlocks); $count++) {
+                        if (!empty($referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]'))) {
                             $list[(string) $referenceContainerBlocks[$count]['name']] = [
                                 'value' => (string) $referenceContainerBlocks[$count]['name'],
                                 'label' => (string) $referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]')[0]
@@ -62,21 +66,7 @@ class Sections implements \Magento\Framework\Option\ArrayInterface
                         }
                     }
                 }
-                else if($referenceContainerBlocks = $configXml->body->referenceContainer->block->block){
-                    for($count = 0; $count < count($referenceContainerBlocks); $count++){
-                        if(!empty($referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]'))){
-                            $list[(string) $referenceContainerBlocks[$count]['name']] = [
-                                'value' => (string) $referenceContainerBlocks[$count]['name'],
-                                'label' => (string) $referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]')[0]
-                            ];
-                        }
-
-                    }
-                }
-
-
             }
-
         }
 
         return $list;

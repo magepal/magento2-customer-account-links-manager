@@ -6,10 +6,8 @@
 
 namespace MagePal\CustomerAccountLinksManager\Helper;
 
-
 class Data extends \Magento\Framework\App\Helper\AbstractHelper
 {
-
     const XML_PATH_ACTIVE = 'customeraccountlinksmanager/general/active';
 
     /**
@@ -17,15 +15,16 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
      *
      * @return bool
      */
-    public function isEnabled() {
+    public function isEnabled()
+    {
         return $this->scopeConfig->isSetFlag(self::XML_PATH_ACTIVE, \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
     }
-
 
     /**
      * @return mixed
      */
-    public function getAction(){
+    public function getAction()
+    {
         return $this->scopeConfig->getValue('customeraccountlinksmanager/general/action', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
     }
 
@@ -39,6 +38,4 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
 
         return empty($list) ? [] : explode(',', $list);
     }
-
-
 }

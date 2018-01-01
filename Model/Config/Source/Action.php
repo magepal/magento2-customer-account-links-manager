@@ -26,7 +26,5 @@ class Action implements \Magento\Framework\Option\ArrayInterface
                 'label' => __('Display only links selected')
             ],
         ];
-
     }
-
 }
