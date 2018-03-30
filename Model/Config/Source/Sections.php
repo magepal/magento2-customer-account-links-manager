@@ -2,7 +2,8 @@
 /**
  * Copyright © MagePal LLC. All rights reserved.
  * See COPYING.txt for license details.
- */
+ * http://www.magepal.com | support@magepal.com
+*/
 
 namespace MagePal\CustomerAccountLinksManager\Model\Config\Source;
 
@@ -28,6 +29,9 @@ class Sections implements \Magento\Framework\Option\ArrayInterface
         return $this->getSections();
     }
 
+    /**
+     * @return array
+     */
     public function getSections()
     {
         $fileList = $this->utilityFiles->getLayoutFiles(['area_name' => 'frontend'], false);
@@ -47,22 +51,26 @@ class Sections implements \Magento\Framework\Option\ArrayInterface
                             ];
                         }
                     }
-                } elseif ($referenceContainerBlocks = $configXml->body->referenceContainer->block->block->block) {
-                    for ($count = 0; $count < count($referenceContainerBlocks); $count++) {
-                        if (!empty($referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]'))) {
-                            $list[(string) $referenceContainerBlocks[$count]['name']] = [
-                                'value' => (string) $referenceContainerBlocks[$count]['name'],
-                                'label' => (string) $referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]')[0]
-                            ];
+                }
+
+                if (isset($configXml->body->referenceContainer)) {
+                    if ($referenceContainerBlocks = $configXml->body->referenceContainer->block->block->block) {
+                        for ($count = 0; $count < count($referenceContainerBlocks); $count++) {
+                            if (!empty($referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]'))) {
+                                $list[(string) $referenceContainerBlocks[$count]['name']] = [
+                                    'value' => (string) $referenceContainerBlocks[$count]['name'],
+                                    'label' => (string) $referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]')[0]
+                                ];
+                            }
                         }
-                    }
-                } elseif ($referenceContainerBlocks = $configXml->body->referenceContainer->block->block) {
-                    for ($count = 0; $count < count($referenceContainerBlocks); $count++) {
-                        if (!empty($referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]'))) {
-                            $list[(string) $referenceContainerBlocks[$count]['name']] = [
-                                'value' => (string) $referenceContainerBlocks[$count]['name'],
-                                'label' => (string) $referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]')[0]
-                            ];
+                    } elseif ($referenceContainerBlocks = $configXml->body->referenceContainer->block->block) {
+                        for ($count = 0; $count < count($referenceContainerBlocks); $count++) {
+                            if (!empty($referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]'))) {
+                                $list[(string) $referenceContainerBlocks[$count]['name']] = [
+                                    'value' => (string) $referenceContainerBlocks[$count]['name'],
+                                    'label' => (string) $referenceContainerBlocks[$count]->xpath('arguments/argument[@name="label"]')[0]
+                                ];
+                            }
                         }
                     }
                 }
