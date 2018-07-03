@@ -10,7 +10,7 @@ Admin Configuration
 ![Customer Account Links Manager for Magento2](https://image.ibb.co/cSJeAH/customer_accoundt_links_manager.png)
 
 Frontend
-![Magento Dashboard Links](https://image.ibb.co/b8PfYH/Customer_Account_Links_Manager_for_Magento2.gif)
+![Magento Dashboard Links](https://image.ibb.co/b8PfYH/Customer_Account_Links_Manager_for_Magento2.gif?1546)
 
 ### Features
  - Remove navigation links from account dashboard sidebar added by:
