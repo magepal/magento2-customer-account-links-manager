@@ -4,7 +4,7 @@
 
 Our Account Links Manager extension allows you to quickly and easily remove unwanted links from your customer navigation dashboard sidebar in Magento. This extension can be used to remove the default Magento links such as "My Product Review", "My Downloadable Products", "My Credit Cards" or "Billing Agreements", as well as links added by other third-party extensions to your customer dashboard sidebar.
 
-No coding or template modification neccessery, all links are removeable by updating the configureable within your Magento admin. Removing any link from your customer account page is as simple as clicking on the link you want to remove and save configuration in admin.
+No coding or template modification necessary, all links are removable by updating the configurable within your Magento admin. Removing any link from your customer account page is as simple as clicking on the link you want to remove and save the configuration in admin.
 
 Admin Configuration
 ![Customer Account Links Manager for Magento2](https://image.ibb.co/cSJeAH/customer_accoundt_links_manager.png)
