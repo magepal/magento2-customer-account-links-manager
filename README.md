@@ -38,9 +38,9 @@ Frontend
  
  ### Documentation
  
-  - [How to Install Reindex for Magento2](https://www.magepal.com/help/docs/magento2-dashboard-links-manager/#installation)
+  - [How to Install Dashboard Links Manager for Magento2](https://www.magepal.com/help/docs/magento2-dashboard-links-manager/#installation)
  
-  - [How to setup Reindex for Magento2](https://www.magepal.com/help/docs/magento2-dashboard-links-manager/#configuration)
+  - [How to setup Customer Account Links Manager for Magento2](https://www.magepal.com/help/docs/magento2-dashboard-links-manager/#configuration)
 
 ## Installation Using Composer
 
