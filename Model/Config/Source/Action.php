@@ -7,7 +7,9 @@
 
 namespace MagePal\CustomerAccountLinksManager\Model\Config\Source;
 
-class Action implements \Magento\Framework\Option\ArrayInterface
+use Magento\Framework\Option\ArrayInterface;
+
+class Action implements ArrayInterface
 {
     const EXCLUDE_SELECTED = 1;
     const INCLUDE_SELECTED = 2;

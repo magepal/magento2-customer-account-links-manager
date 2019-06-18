@@ -1,6 +1,6 @@
 <a href="http://www.magepal.com" title="Magento Modules Marketplace" ><img src="https://image.ibb.co/dHBkYH/Magepal_logo.png" width="100" align="right" alt="Best Magento Extensions Provider" /></a>
 
-## Customer Account Links Manager for Magento2
+# Customer Account Links Manager for Magento2
 
 Our Account Links Manager extension allows you to quickly and easily remove unwanted links from your customer navigation dashboard sidebar in Magento. This extension can be used to remove the default Magento links such as "My Product Review", "My Downloadable Products", "My Credit Cards" or "Billing Agreements", as well as links added by other third-party extensions to your customer dashboard sidebar.
 
@@ -34,12 +34,15 @@ Frontend
  - Gift Registry
  - Reward points
  - Order by SKU
+ 
+ 
+ ### Documentation
+ 
+  - [How to Install Reindex for Magento2](https://www.magepal.com/help/docs/magento2-dashboard-links-manager/#installation)
+ 
+  - [How to setup Reindex for Magento2](https://www.magepal.com/help/docs/magento2-dashboard-links-manager/#configuration)
 
-## Installation
-
-#### Step 1 - Installation Customer Account Links Manager
-
-##### Using Composer  (recommended)
+## Installation Using Composer
 
 ```
 composer require magepal/magento2-customeraccountlinksmanager
@@ -71,8 +74,22 @@ If you encounter any problems or bugs, please open an issue on [GitHub](https://
 
 Need help setting up or want to customize this extension to meet your business needs? Please email support@magepal.com and if we like your idea we will add this feature for free or at a discounted rate.
 
-Top Magento Extensions
+Magento 2 Extensions
 ---
-[Custom SMTP](https://www.magepal.com/magento2/extensions/custom-smtp.html) | [Google Tag Manager](https://www.magepal.com/magento2/extensions/google-tag-manager.html) | [Enhanced E-commerce](https://www.magepal.com/magento2/extensions/enhanced-ecommerce-for-google-tag-manager.html) | [Reindex](https://www.magepal.com/magento2/extensions/reindex.html) | [Custom Shipping Method](https://www.magepal.com/magento2/extensions/custom-shipping-rates-for-magento-2.html) | [Preview Order Confirmation](https://www.magepal.com/magento2/extensions/preview-order-confirmation-page-for-magento-2.html) | [Guest to Customer](https://www.magepal.com/magento2/extensions/guest-to-customer.html) | [Admin Form Fields Manager](https://www.magepal.com/magento2/extensions/admin-form-fields-manager-for-magento-2.html) | [Customer Dashboard Links Manager](https://www.magepal.com/magento2/extensions/customer-dashboard-links-manager-for-magento-2.html) | [Lazy Loader](https://www.magepal.com/magento2/extensions/lazy-load.html) | [Order Confirmation Page Miscellaneous Scripts](https://www.magepal.com/magento2/extensions/order-confirmation-miscellaneous-scripts-for-magento-2.html)
+- [Custom SMTP](https://www.magepal.com/magento2/extensions/custom-smtp.html)
+- [Catalog Hover Image for Magento](https://www.magepal.com/magento2/extensions/catalog-hover-image-for-magento.html)
+- [Enhanced Success Page for Magento 2](https://www.magepal.com/magento2/extensions/enhanced-success-page.html)
+- [Enhanced Transactional Emails for Magento 2](https://www.magepal.com/magento2/extensions/enhanced-transactional-emails.html)
+- [Google Tag Manager](https://www.magepal.com/magento2/extensions/google-tag-manager.html) 
+- [Enhanced E-commerce](https://www.magepal.com/magento2/extensions/enhanced-ecommerce-for-google-tag-manager.html) 
+- [Reindex](https://www.magepal.com/magento2/extensions/reindex.html) 
+- [Custom Shipping Method](https://www.magepal.com/magento2/extensions/custom-shipping-rates-for-magento-2.html) 
+- [Preview Order Confirmation](https://www.magepal.com/magento2/extensions/preview-order-confirmation-page-for-magento-2.html)
+- [Guest to Customer](https://www.magepal.com/magento2/extensions/guest-to-customer.html) 
+- [Admin Form Fields Manager](https://www.magepal.com/magento2/extensions/admin-form-fields-manager-for-magento-2.html) 
+- [Customer Dashboard Links Manager](https://www.magepal.com/magento2/extensions/customer-dashboard-links-manager-for-magento-2.html) 
+- [Lazy Loader](https://www.magepal.com/magento2/extensions/lazy-load.html) 
+- [Order Confirmation Page Miscellaneous Scripts](https://www.magepal.com/magento2/extensions/order-confirmation-miscellaneous-scripts-for-magento-2.html)
+- [HTML Minifier for Magento2](https://www.magepal.com/magento2/extensions/html-minifier.html)
 
 © MagePal LLC. | [www.magepal.com](http:/www.magepal.com)

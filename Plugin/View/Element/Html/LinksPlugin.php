@@ -7,25 +7,29 @@
 
 namespace MagePal\CustomerAccountLinksManager\Plugin\View\Element\Html;
 
+use Closure;
+use Magento\Framework\View\Element\AbstractBlock;
+use Magento\Framework\View\Element\Html\Links;
+use MagePal\CustomerAccountLinksManager\Helper\Data;
 use MagePal\CustomerAccountLinksManager\Model\Config\Source\Action;
 
 class LinksPlugin
 {
 
-    /** @var \MagePal\CustomerAccountLinksManager\Helper\Data */
+    /** @var Data */
     protected $_helperData;
 
     /**
      * LinksPlugin constructor.
-     * @param \MagePal\CustomerAccountLinksManager\Helper\Data $helperData
+     * @param Data $helperData
      */
     public function __construct(
-        \MagePal\CustomerAccountLinksManager\Helper\Data $helperData
+        Data $helperData
     ) {
         $this->_helperData = $helperData;
     }
 
-    public function aroundRenderLink(\Magento\Framework\View\Element\Html\Links $subject, \Closure $proceed, \Magento\Framework\View\Element\AbstractBlock $link)
+    public function aroundRenderLink(Links $subject, Closure $proceed, AbstractBlock $link)
     {
         $output = $proceed($link);
 

@@ -7,9 +7,13 @@
 
 namespace MagePal\CustomerAccountLinksManager\Model\Config\Source;
 
-class Sections implements \Magento\Framework\Option\ArrayInterface
+use Magento\Framework\App\Utility\Files;
+use Magento\Framework\Option\ArrayInterface;
+use Magento\Framework\View\Element\Html\Links;
+
+class Sections implements ArrayInterface
 {
-    /** @var \Magento\Framework\App\Utility\Files  */
+    /** @var Files  */
     protected $utilityFiles;
 
     protected $links;
@@ -17,8 +21,8 @@ class Sections implements \Magento\Framework\Option\ArrayInterface
     protected $list = [];
 
     public function __construct(
-        \Magento\Framework\App\Utility\Files $utilityFiles,
-        \Magento\Framework\View\Element\Html\Links $links
+        Files $utilityFiles,
+        Links $links
     ) {
         $this->utilityFiles = $utilityFiles;
         $this->links = $links;
