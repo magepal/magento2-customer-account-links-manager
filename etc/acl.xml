@@ -13,7 +13,7 @@
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="MagePal_CustomerAccountLinksManager::customeraccountlinksmanager" title="Google Tag Manager" />
+                            <resource id="MagePal_CustomerAccountLinksManager::customeraccountlinksmanager" translate="title" title="Customer Account Links Manager" />
                         </resource>
                     </resource>
                 </resource>
