@@ -4,6 +4,7 @@
         <sequence>
             <module name="Magento_Customer"/>
             <module name="Magento_Wishlist"/>
+            <module name="MagePal_Core"/>
         </sequence>
     </module>
 </config>
