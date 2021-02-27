@@ -34,9 +34,9 @@
                     <hr class="magepal-hr" />
                 ]]>
                 </comment>
-                <field id="composer_version" translate="label" type="label" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <field id="MagePal_CustomerAccountLinksManager" translate="label" type="label" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Composer Version</label>
-                    <frontend_model>MagePal\CustomerAccountLinksManager\Block\Adminhtml\System\Config\Form\Composer\Version</frontend_model>
+                    <frontend_model>MagePal\Core\Block\Adminhtml\System\Config\Composer\Version</frontend_model>
                 </field>
             </group>
             <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
