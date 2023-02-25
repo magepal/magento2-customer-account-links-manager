@@ -43,7 +43,7 @@ class Sections implements ArrayInterface
         $fileList = $this->utilityFiles->getLayoutFiles(['area_name' => 'frontend'], false);
 
         foreach ($fileList as $configFile) {
-            if (strpos($configFile, 'customer_account.xml') !== false) {
+            if (strpos((string) $configFile, 'customer_account.xml') !== false) {
                 $configXml = simplexml_load_file($configFile);
                 $this->processXmlElement($configXml);
             }
